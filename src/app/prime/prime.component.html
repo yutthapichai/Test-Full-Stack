@@ -1,0 +1,30 @@
+<br><br><br><br>
+<div class="bounds">
+
+  <div fxLayout="row" fxFlexFill>
+
+    <div class="sec1">
+      <h3>first-section</h3>
+      <mat-form-field class="test2" appearance="outline">
+        <mat-label>Amount anf enter</mat-label>
+        <input type="number" matInput [value]="amount" (keyup)="number($event)" placeholder="Input you number">
+      </mat-form-field>
+    </div>
+    <div class="sec2">
+      <h3 class="sec22">two-section</h3>
+      <mat-form-field appearance="fill">
+        <mat-label>Select</mat-label>
+        <mat-select [(value)]="selected" (selectionChange)="calculateWhether()">
+          <mat-option [value]="'isPrime'">isPrime</mat-option>
+          <mat-option [value]="'isFibonacci'">isFibonacci</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="sec3">
+      <h3> third-section</h3>
+      <h4>{{col3}}</h4>
+    </div>
+
+  </div>
+
+</div>
